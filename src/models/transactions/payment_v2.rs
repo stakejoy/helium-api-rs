@@ -4,6 +4,8 @@ use serde::{Deserialize, Serialize};
 #[derive(Clone, Serialize, Deserialize, Debug)]
 pub struct PaymentV2 {
     pub hash: String,
+    pub height: u64,
+    pub time: i64,
     /// Fee is in datacredits
     pub fee: u64,
     pub nonce: u64,
